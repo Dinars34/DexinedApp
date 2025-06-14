@@ -1,8 +1,8 @@
 streamlit>=1.0
-torch>=1.4            
-opencv-python         
-matplotlib            
-kornia                
-numpy                 
-h5py                  
-Pillow                
+torch>=1.4
+opencv-python-headless>=4.5
+matplotlib
+kornia
+numpy
+h5py
+Pillow
