@@ -1,9 +1,9 @@
 streamlit
-opencv-python-headless
-torch>=1.4.0
-torchvision
-numpy
-matplotlib
-pillow
-kornia
-h5py
+opencv-python
+ torch>=1.4.0
+ torchvision
+ numpy
+ matplotlib
+ pillow
+ kornia
+ h5py
