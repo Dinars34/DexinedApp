@@ -8,7 +8,7 @@ from PIL import Image
 # 1) Setup direktori dan session state
 # ————————————————————————————————
 DATA_DIR = "data"
-FUSED_DIR = os.path.join("result", "BIPED2CLASSIC", "fused")
+FUSED_DIR = os.path.join("result", "BIPED2CLASSIC", "avg")
 
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(FUSED_DIR, exist_ok=True)
