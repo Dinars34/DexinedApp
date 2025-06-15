@@ -1,9 +1,11 @@
 streamlit
-opencv-python==4.9.0.80 
- torch>=1.4.0
- torchvision
- numpy
- matplotlib
- pillow
- kornia
- h5py
+opencv-python-headless
+opencv-python==4.9.0.80
+cv2
+torch>=1.4.0
+torchvision
+numpy
+matplotlib
+pillow
+kornia
+h5py
