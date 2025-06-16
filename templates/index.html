@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deteksi Jalan Berlubang</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container { display: flex; flex-direction: column; align-items: center; }
+        .upload-section, .result-section { width: 100%; margin-bottom: 30px; }
+        .columns { display: flex; justify-content: space-around; margin-top: 20px; }
+        .column { flex: 1; text-align: center; margin: 0 10px; }
+        img { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; padding: 5px; }
+        .btn { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px;
+            margin: 10px;
+        }
+        .btn:hover { background-color: #45a049; }
+        .error { color: red; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Deteksi jalan berlubang menggunakan DexiNed Edge Detection</h1>
+        
+        <div class="upload-section">
+            <form method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" required>
+                <button type="submit" class="btn">Unggah Gambar</button>
+            </form>
+        </div>
+
+        {% if error %}
+            <div class="error">
+                <strong>Error:</strong> {{ error }}
+            </div>
+        {% endif %}
+
+        {% if uploaded_file %}
+            <div class="image-preview">
+                <h2>Gambar Unggahan</h2>
+                <img src="{{ url_for('data_file', filename=uploaded_file) }}" alt="Uploaded Image">
+                
+                {% if not processed %}
+                    <form method="post">
+                        <button type="submit" name="process" class="btn">Proses Gambar</button>
+                    </form>
+                {% endif %}
+            </div>
+        {% endif %}
+
+        {% if processed and processed_image %}
+            <div class="result-section">
+                <h2>Hasil Deteksi</h2>
+                <div class="columns">
+                    <div class="column">
+                        <h3>Asli</h3>
+                        <img src="{{ url_for('data_file', filename=uploaded_file) }}" alt="Original Image">
+                    </div>
+                    <div class="column">
+                        <h3>Hasil Deteksi Tepi</h3>
+                        <img src="{{ url_for('result_file', filename=processed_image) }}" alt="Processed Image">
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
