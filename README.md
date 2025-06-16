@@ -21,12 +21,11 @@ Aplikasi ini menggunakan model DexiNed (Dense Edge eXtraction for Image NeD) unt
    ````
 
 2. Buat dan aktifkan virtual environment (opsional namun direkomendasikan):
-
    ```bash
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
    venv\Scripts\activate    # Windows
-   ```
+   ````
 3. Install semua dependency:
 
    ```bash
