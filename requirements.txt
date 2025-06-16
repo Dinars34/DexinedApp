@@ -1,12 +1,11 @@
-opencv-python-headless
+opencv-python-headless==4.8.1.78
 torch>=1.4.0
 torchvision
 numpy
 matplotlib
-pillow
+Pillow>=10.0.0
 kornia
 h5py
 Flask==2.3.2
-Pillow==9.5.0
 Werkzeug==2.3.6
 gunicorn==22.0.0
