@@ -35,13 +35,6 @@ Aplikasi ini menggunakan model DexiNed (Dense Edge eXtraction for Image NeD) unt
    ```bash
    pip install -r requirements.txt
    ```
-4. Unduh model DexiNed pre-trained dan simpan ke folder `models/`:
-
-   ```bash
-   mkdir -p models
-   # contoh:
-   wget -O models/dexined.pth https://link.to/model/dexined.pth
-   ```
 
 ## Cara Menjalankan
 
