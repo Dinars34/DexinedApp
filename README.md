@@ -4,9 +4,6 @@
 ## Deskripsi
 Aplikasi ini menggunakan model DexiNed (Dense Edge eXtraction for Image NeD) untuk mendeteksi tepi pada citra. Dengan antarmuka web sederhana berbasis Streamlit, Anda dapat mengunggah gambar lokal dan melihat hasil deteksi tepi secara real time.
 
-## Screenshot
-![UI Aplikasi](assets/ui_screenshot.png)
-
 ## Fitur
 - Deteksi tepi menggunakan model DexiNed pre-trained
 - Antarmuka web sederhana berbasis Streamlit
@@ -21,7 +18,7 @@ Aplikasi ini menggunakan model DexiNed (Dense Edge eXtraction for Image NeD) unt
    ```bash
    git clone https://github.com/Dinars34/DexinedApp.git
    cd DexinedApp
-````
+   ````
 
 2. Buat dan aktifkan virtual environment (opsional namun direkomendasikan):
 
