@@ -1,5 +1,5 @@
 streamlit
-opencv-python-headless==4.9.0.80
+opencv-python-headless
 torch>=1.4.0
 torchvision
 numpy
@@ -7,3 +7,6 @@ matplotlib
 pillow
 kornia
 h5py
+Flask==2.3.2
+Pillow==9.5.0
+Werkzeug==2.3.6
