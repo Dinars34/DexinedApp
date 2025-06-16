@@ -8,3 +8,4 @@ Pillow
 Flask
 gunicorn
 h5py
+werkzeug
