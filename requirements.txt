@@ -9,3 +9,4 @@ h5py
 Flask==2.3.2
 Pillow==9.5.0
 Werkzeug==2.3.6
+gunicorn==22.0.0
