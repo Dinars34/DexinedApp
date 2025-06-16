@@ -1,4 +1,56 @@
-App using Dexined for Edge Detection
-How to use the app
-#install all depencies on requrement.txt
-and run the app.py by command python app.py
+````markdown
+# DexiNed Edge Detection App
+
+## Deskripsi
+Aplikasi ini menggunakan model DexiNed (Dense Edge eXtraction for Image NeD) untuk mendeteksi tepi pada citra. Dengan antarmuka web sederhana berbasis Streamlit, Anda dapat mengunggah gambar lokal dan melihat hasil deteksi tepi secara real time.
+
+## Screenshot
+![UI Aplikasi](assets/ui_screenshot.png)
+
+## Fitur
+- Deteksi tepi menggunakan model DexiNed pre-trained
+- Antarmuka web sederhana berbasis Streamlit
+- Mendukung format gambar umum (PNG, JPEG, BMP)
+
+## Prasyarat
+- Python 3.7 atau lebih baru
+- GPU (opsional, untuk inferensi lebih cepat) atau CPU
+
+## Instalasi
+1. Clone repository ini:
+   ```bash
+   git clone https://github.com/Dinars34/DexinedApp.git
+   cd DexinedApp
+````
+
+2. Buat dan aktifkan virtual environment (opsional namun direkomendasikan):
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate    # Windows
+   ```
+3. Install semua dependency:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Unduh model DexiNed pre-trained dan simpan ke folder `models/`:
+
+   ```bash
+   mkdir -p models
+   # contoh:
+   wget -O models/dexined.pth https://link.to/model/dexined.pth
+   ```
+
+## Cara Menjalankan
+
+Jalankan aplikasi dengan perintah:
+
+```bash
+python app.py
+```
+
+<div style="text-align:center"><img src='figs/Pasted image (2).png' width=800>
+</div>
+```
