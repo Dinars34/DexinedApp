@@ -7,3 +7,4 @@ matplotlib
 pillow
 kornia
 h5py
+mtcnn>=0.1.1
