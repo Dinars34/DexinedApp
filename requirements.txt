@@ -32,8 +32,7 @@ wrapt
 streamlit
 torch
 torchvision
-opencv-python
+opencv-python-headless
 pillow
 kornia
 mtcnn
-protoc >= 3.19.0
