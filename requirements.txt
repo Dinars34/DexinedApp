@@ -1,9 +1,9 @@
-streamlit>=1.22.0
+streamlit>=1.28.0
 torch
 torchvision
-numpy
-opencv-python-headless
-matplotlib
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+matplotlib>=3.7.0
 pillow
 kornia
 h5py
